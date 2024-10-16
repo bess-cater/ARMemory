@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Questions</title>
+    <link rel="stylesheet" href="style_display.css">
+</head>
+<body>
+    <div class="fixed-top">
+        <div id="videoInfo">Video 1 of 50</div>
+        <img src="img/question.png" id="iconButton" class="fixed-icon" alt="Icon Button">
+    </div>
+    <div id="popupModal" class="popup-modal">
+        <div class="popup-content">
+            <span id="closePopup" class="close-popup">&times;</span>
+            <p>Please, read question and assess the responses by different models. Try to assess separately the visual part (frame) and the textual part (text). Then, assess the answer on the whole ("common".)
+            for visual: appropriatness of retrieved frame as visual answer to the question, 
+            for textual: how text helps to answer the question using the question.</p>
+        </div>
+    </div>
+
+    <div id="content"></div>
+    <button id="nextButton">Next</button>
+    <script src="display_script.js"></script>
+</body>
+</html>

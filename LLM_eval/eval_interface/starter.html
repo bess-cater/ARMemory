@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explanation</title>
+</head>
+<style>
+    #text {
+        background-color: #F2F8F9;
+        margin: 5% 20% 5% 20%;
+        padding: 2% 2%;
+        font-size: 24px; 
+    }
+
+    .center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    }
+    form {
+    display: flex;
+    flex-direction: column; /* Stack label and input vertically */
+    align-items: center;    /* Center align them horizontally */
+    margin-bottom: 20px;    /* Space between form and button */
+    }
+
+    label {
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+
+    input {
+        padding: 8px;
+        font-size: 16px;
+        margin-bottom: 20px;
+        width: 200px;
+        box-sizing: border-box;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        background-color: #192591; /* Green */
+        color: white;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    button:hover {
+        background-color: #3d4dda;
+    }
+
+</style>
+<body>
+    <div id="text">
+        <p>We see lots of objects in various locations every day; alas, our memory is not perfect and we can not keep all of the visual information in our memory; in this case, we may use smart assistants which store information about what we have seen throughout the day.
+            <br>On the next page you will see a video and some questions you may ask such assistant trying to remember a piece of information and answer a certain assistant may give you; the answer consists of visual part and text part; visual part is a frame retrieved from collection of frames of a video (let’s imagine this is a video recorded by your viewpoint throughout the day), and a textual part is a direct answer to the question derived from the frame. Please, rate each answer as combination of frame and text.
+            You can use the video as supplementary material: you do not need to fully watch it, but can skim through it to locate the moments related to questions.
+            <br>Rate the components of each answer: frame, text and the answer on the whole. Please, rate each of the three on a scale from 1 to 7 with 1 being "the answer is absolutely useless and doesn't help at all" and 7 being "the answer really helps to answer the question".
+            <br>If ready, press start button!</p>
+    </div>
+    <div class="center-container">
+        <form id="userForm">
+            <label for="userId">Your ID:</label>
+            <input type="text" id="userId" name="userId" required>
+            <button id="submitcontBtn">Submit and continue</button>
+        </form>
+        
+    </div>
+
+    <script src="starter.js"></script>
+
+    <!-- <script>
+        document.getElementById('submitcontBtn').addEventListener('click', function() {
+    // Navigate to index.html
+        window.location.href = 'index.html';
+    });
+    </script> -->
+</body>
+</html>

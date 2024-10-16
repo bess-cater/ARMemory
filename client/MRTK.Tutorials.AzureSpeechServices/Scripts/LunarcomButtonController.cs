@@ -1,0 +1,76 @@
+﻿// Copyright (c) Microsoft Corporation. 
+// Licensed under the MIT License.
+
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+
+public class LunarcomButtonController : MonoBehaviour
+{
+    [Header("Reference Objects")]
+    public RecognitionMode speechRecognitionMode = RecognitionMode.Disabled;
+
+    [Space(6)]
+    [Header("Button States")]
+    //public Sprite Default;
+    //public Sprite Activated;
+
+    private Button button;
+    public Text outputText;
+    private bool isSelected = false;
+
+    public LunarcomController lunarcomController;
+    public LunarcomSpeechRecognizer recognize;
+    public SocketClient MyClient;
+
+    private void Start()
+    {
+        lunarcomController = LunarcomController.lunarcomController;
+        button = GetComponent<Button>();
+    }
+
+    public bool GetIsSelected()
+    {
+        return isSelected;
+    }
+
+    public void ToggleSelected()
+    {
+        if (isSelected)
+        {
+            DeselectButton();
+            MyClient.SendMessageToServer(recognize.whole);
+        }
+        else
+        {
+            //button.image.sprite = Activated;
+            isSelected = true;
+            outputText.text = "Press!";
+            lunarcomController.SetActiveButton(GetComponent<LunarcomButtonController>());
+
+            if (lunarcomController.IsOfflineMode())
+            {
+                outputText.text = "Offline????";
+                lunarcomController.SelectMode(RecognitionMode.Offline);
+            } else
+            {
+                print("YEAAAAHHHH!");
+                lunarcomController.SelectMode(speechRecognitionMode);
+                outputText.text = "At least you pressed";
+            }
+        }
+    }
+
+    public void ShowNotSelected()
+    {
+        //button.image.sprite = Default;
+        isSelected = false;
+    }
+
+    public void DeselectButton()
+    {
+        ShowNotSelected();
+        lunarcomController.SelectMode(RecognitionMode.Disabled);
+    }
+}
