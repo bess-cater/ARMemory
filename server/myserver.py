@@ -102,7 +102,7 @@ def process_data(image, folder, collection): #! process_data(image, pipe):
 
 
 
-def start_server(folder, collection, host='0.0.0.0', port=9999): #! 117.17.187.152 start_server(pipe, host='0.0.0.0', port=9999):
+def start_server(folder, collection, host='0.0.0.0', port=9999): 
     my_data = dict()
     server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     server_socket.bind((host, port))

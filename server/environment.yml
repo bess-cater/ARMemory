@@ -1,4 +1,4 @@
-name: mgm
+name: memory
 channels:
   - conda-forge
 dependencies:

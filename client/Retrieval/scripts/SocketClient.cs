@@ -39,7 +39,7 @@ public class SocketClient : MonoBehaviour
         void Start()
     {
         
-        ConnectToServer("0.0.0.0", 9999); //! IP address here
+        ConnectToServer("0.0.0.0", 9999); //! Replace with your server IP address here
         receivedTexture = new Texture2D(2, 2);
         // clientThread.IsBackground = true;
         // clientThread.Start();
