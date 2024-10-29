@@ -53,10 +53,9 @@ it is required [here](https://github.com/bess-cater/ARMemory/blob/411f2611bddf08
 
 In order to enable Hololens 2 capturing images and sending it to the server, you need to build the Hololens application from Unity project.
 
-1. Open [**encoding** scene](https://github.com/bess-cater/ARMemory/blob/f78a0cc03d5d60fe30c17de5d33ab57b0dde0744/client/scenes/encoding.unity)
+1. Open [**encoding** scene](https://github.com/bess-cater/ARMemory/blob/09007dda99f5df36fecb546ef34f9f129e746d1f/client/Assets/encoding.unity)
 
-2. Make sure that [encoding script](https://github.com/bess-cater/ARMemory/blob/main/client/scripts/HololensSender.cs) is attached to the scene
-and your IP and port are [set](https://github.com/bess-cater/ARMemory/blob/f78a0cc03d5d60fe30c17de5d33ab57b0dde0744/client/scripts/HololensSender.cs#L21).
+2. Make sure that [encoding script](https://github.com/bess-cater/ARMemory/blob/09007dda99f5df36fecb546ef34f9f129e746d1f/client/Assets/myscipts/HololensSender.cs) is attached to the scene and your IP and port are [set](https://github.com/bess-cater/ARMemory/blob/09007dda99f5df36fecb546ef34f9f129e746d1f/client/Assets/myscipts/HololensSender.cs#L21).
 
 3. Before building the application, make sure your app has access to the WebCam (Edit - Project Settings - Capabilities - WebCam)
 
@@ -82,13 +81,13 @@ The first two arguments must be the same as in the Encoding stage; for condition
 
 2. For this project, we especially rely on Microsoft Azure cognitive services; the package must be downloaded from [here](https://learn.microsoft.com/en-us/training/modules/azure-speech-services-tutorials-mrtk/3-exercise-integrate-speech-recognition-transcription) and imported into the Unity project.
 
-3. To use the sevices, provide your Speech SDK credentials [here](https://github.com/bess-cater/ARMemory/blob/f78a0cc03d5d60fe30c17de5d33ab57b0dde0744/client/MRTK.Tutorials.AzureSpeechServices/Scripts/LunarcomController.cs#L18).
-
-4. Open the [retrieval scene](https://github.com/bess-cater/ARMemory/blob/f78a0cc03d5d60fe30c17de5d33ab57b0dde0744/client/scenes/retrieval.unity). If everything is set right, you will see the following layout:
+3. Open the [retrieval scene](https://github.com/bess-cater/ARMemory/blob/f78a0cc03d5d60fe30c17de5d33ab57b0dde0744/client/scenes/retrieval.unity). If everything is set right, you will see the following layout:
 
 ![layout](img/layout.png)
 
-5. Do not forget to [set your IP and port](https://github.com/bess-cater/ARMemory/blob/f78a0cc03d5d60fe30c17de5d33ab57b0dde0744/client/scripts/SocketClient.cs#L42)!
+4. To use the sevices, provide your Speech SDK credentials.
+
+5. Do not forget to [set your IP and port](https://github.com/bess-cater/ARMemory/blob/09007dda99f5df36fecb546ef34f9f129e746d1f/client/Assets/myscipts/SocketClient.cs#L42)!
 
 6. Before the build, make sure that **InternetClient**, **Microphone**, and **SpatialPerception** capabilities of the Publishing settings are enabled.
 
