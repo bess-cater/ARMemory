@@ -1,5 +1,13 @@
 # ARMemory
-Memories retrieval using Multimodal LLM with Hololens 2
+Memories retrieval using Multimodal LLM with Hololens 2.
+
+This syetem developed for deployment on Hololens 2 device 
+
+1) Captures images from user's field of view and stores the descriptions of them generated with LLM in a vector database;
+
+2) Retrieves the images best matching the user's question and generates textual answers complementing the retrieved images.
+
+![overview](img/overview.png)
 
 ## Table of Contents
 - [Server set-up](#servers)
