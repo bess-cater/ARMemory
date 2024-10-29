@@ -1,7 +1,7 @@
 # ARMemory
 Memories retrieval using Multimodal LLM with Hololens 2.
 
-This syetem developed for deployment on Hololens 2 device 
+This system developed for deployment on Hololens 2 device 
 
 1) Captures images from user's field of view and stores the descriptions of them generated with LLM in a vector database;
 
