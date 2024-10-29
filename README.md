@@ -15,12 +15,15 @@ Memories retrieval using Multimodal LLM with Hololens 2
 1. Clone the repository; to run the server, you will only need files in the *server* folder.
 
 ```git clone https://github.com/bess-cater/ARMemory.git && cd server```
+
 2. Build docker image from dockerfile:
 
 ```docker build -t memory_image .```
+
 3. And run it:
 
 ```docker run -i -t -d --name memory --ipc=host --gpus all -v "$(pwd)/ARMemory/server:/memory" -p 9999:9999 memory_image```
+
 4. Activate conda environment:
 
 ```conda env create -f environment.yml && conda activate memory```
