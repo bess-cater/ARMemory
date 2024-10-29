@@ -14,7 +14,7 @@ Memories retrieval using Multimodal LLM with Hololens 2
 
 1. Clone the repository; to run the server, you will only need files in the *server* folder.
 
-```git clone https://github.com/bess-cater/ARMemory.git && cd server```
+```git clone https://github.com/bess-cater/ARMemory.git && cd ARMeory/server```
 
 2. Build docker image from dockerfile:
 
