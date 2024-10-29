@@ -13,17 +13,22 @@ Memories retrieval using Multimodal LLM with Hololens 2
 ## Server set-up
 
 1. Clone the repository; to run the server, you will only need files in the *server* folder.
+
 ```git clone https://github.com/bess-cater/ARMemory.git && cd server```
 2. Build docker image from dockerfile:
+
 ```docker build -t memory_image .```
 3. And run it:
+
 ```docker run -i -t -d --name memory --ipc=host --gpus all -v "$(pwd)/ARMemory/server:/memory" -p 9999:9999 memory_image```
 4. Activate conda environment:
+
 ```conda env create -f environment.yml && conda activate memory```
 
 Additional steps:
 
 1. For *Image* and *Image+Text* mode you may want to use segmentation model. We use [LISA](https://github.com/dvlab-research/LISA/tree/main).
+
 Clone the repository and place the corresponding folder **inside** the *server* folder.
 
 You may want to change the port; in this case, make sure to assign the same port in server and client-related files.
@@ -38,6 +43,7 @@ This section describes the process for capturing pictures from Hololens built-in
 it is required [here](https://github.com/bess-cater/ARMemory/blob/411f2611bddf089c9fab526e12047ae922e90ac6/server/myserver.py#L167).
 
 2. Start the server
+
 ```python -m myserver --save <name of a person whose viewpoint is recorded> --scene <place which is recorded>```
 
 ### Client
