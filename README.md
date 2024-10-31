@@ -25,11 +25,12 @@ This system developed for deployment on Hololens 2 device
 
 2) Server-related code is written in Python.
 
-Especially, this projects makes use of:
+<ul>Especially, this projects makes use of:
 
-<img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" />
+<li><img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" />
 
-for integrating [LISA model](https://github.com/dvlab-research/LISA/tree/main)
+ for integrating [LISA model](https://github.com/dvlab-research/LISA/tree/main)</li>
+ <li><img src="https://img.shields.io/badge/-HuggingFace-FDEE21?style=for-the-badge&logo=HuggingFace&logoColor=black"> 's Transformers library (Bits and Bytes) for model 4-bit quantization</li>
 
 
 ## Server set-up
