@@ -10,6 +10,7 @@ This system developed for deployment on Hololens 2 device
 ![overview](img/overview.png)
 
 ## Table of Contents
+- [Stack](#stack)
 - [Server set-up](#servers)
 - [Encoding](#encoding)
     - [Server](#e-server)
@@ -17,6 +18,19 @@ This system developed for deployment on Hololens 2 device
 - [Retrieval](#retrieval)
     - [Server](#r-server)
     - [Client](#r-server)
+
+## Stack
+
+1) Client-related code is written in C#;
+
+2) Server-related code is written in Python.
+
+Especially, this projects makes use of:
+
+<img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" />
+
+for integrating [LISA model](https://github.com/dvlab-research/LISA/tree/main)
+
 
 ## Server set-up
 
