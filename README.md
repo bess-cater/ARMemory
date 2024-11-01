@@ -7,7 +7,7 @@ This system developed for deployment on Hololens 2 device
 
 2) Retrieves the images best matching the user's question and generates textual answers complementing the retrieved images.
 
-<img src="img/overview.png", width = 300/>
+<img src="img/overview.png" width = 300/>
 
 ## Table of Contents
 - [Stack](#stack)
@@ -104,7 +104,7 @@ The first two arguments must be the same as in the Encoding stage; for condition
 
 3. Open the [retrieval scene](https://github.com/bess-cater/ARMemory/blob/f78a0cc03d5d60fe30c17de5d33ab57b0dde0744/client/scenes/retrieval.unity). If everything is set right, you will see the following layout:
 
-<img src="img/layout.png", width = 300/>
+<img src="img/layout.png" width = 300/>
 
 4. To use the sevices, provide your Speech SDK credentials.
 
