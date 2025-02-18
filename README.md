@@ -1,5 +1,7 @@
 # ARMemory
 Official code for the paper [A picture is worth a thousand words? Investigating the Impact of Image Aids in AR on Memory Recall for Everyday Tasks]( https://doi.org/10.1145/3708359.3712087)
+
+
 Memories retrieval using Multimodal LLM with Hololens 2.
 
 This system developed for deployment on Hololens 2 device 
